@@ -11,7 +11,7 @@ app.use(function( req,res,next){
     if (req.header['x-forwarded-proto'] === 'http') {
     next();
     }else {
-    res.redirect('http://'+req.hostname+req.url)
+    res.redirect('http://' + req.hostname + req.url )
     }
 });
 // Telling it folder to serve
