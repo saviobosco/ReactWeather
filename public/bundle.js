@@ -27221,9 +27221,13 @@
 
 	var Examples = function Examples(props) {
 	    return React.createElement(
-	        'h3',
+	        'div',
 	        null,
-	        ' Example Component '
+	        React.createElement(
+	            'h3',
+	            null,
+	            ' Example! '
+	        )
 	    );
 	};
 
