@@ -109,6 +109,7 @@
 	var Examples = __webpack_require__(263);
 
 	__webpack_require__(264);
+	// App css
 	__webpack_require__(268);
 	$(document).foundation();
 	ReactDOM.render(React.createElement(
@@ -25669,7 +25670,7 @@
 	            'div',
 	            null,
 	            React.createElement(
-	                'h3',
+	                'h1',
 	                { className: 'text-center page-title' },
 	                ' Get Weather '
 	            ),
@@ -27838,8 +27839,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27857,7 +27858,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem\n}\ninput[type=search] {\n  box-shadow: none;\n}\n", ""]);
+	exports.push([module.id, ".page-title {\n  color: #555;\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem; }\n\ninput[type=search] {\n  box-shadow: none; }\n", ""]);
 
 	// exports
 
