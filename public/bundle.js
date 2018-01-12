@@ -25656,8 +25656,8 @@
 	            null,
 	            React.createElement(
 	                'h3',
-	                null,
-	                ' Weather Component '
+	                { className: 'text-center' },
+	                ' Get Weather '
 	            ),
 	            React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	            renderMessage()
@@ -25694,17 +25694,12 @@
 	            'div',
 	            null,
 	            React.createElement(
-	                'h3',
-	                null,
-	                ' WeatherForm Component '
-	            ),
-	            React.createElement(
 	                'form',
 	                { onSubmit: this.onFormSubmit },
 	                React.createElement('input', { type: 'text', ref: 'location' }),
 	                React.createElement(
 	                    'button',
-	                    null,
+	                    { className: 'button expanded hollow' },
 	                    ' Get Weather '
 	                )
 	            )
@@ -25729,7 +25724,7 @@
 
 	    return React.createElement(
 	        'h3',
-	        null,
+	        { className: 'text-center' },
 	        ' It\'s it ',
 	        temp,
 	        ' in ',
