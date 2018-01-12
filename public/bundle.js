@@ -27305,20 +27305,49 @@
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
-	    return React.createElement(
-	        'div',
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
+	      'h1',
+	      { className: 'text-center' },
+	      ' About! '
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      ' This is a weather application built on React. I have built this for the Complete React Web Developer Course'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Here are some of the tools I used:'
+	    ),
+	    React.createElement(
+	      'ul',
+	      null,
+	      React.createElement(
+	        'li',
 	        null,
 	        React.createElement(
-	            'h3',
-	            null,
-	            ' About! '
+	          'a',
+	          { href: 'https://facebook.github.io/react' },
+	          'React'
 	        ),
+	        ' - This was the javascript framework used'
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
 	        React.createElement(
-	            'p',
-	            null,
-	            ' Welcome to the about page '
-	        )
-	    );
+	          'a',
+	          { href: 'http://openweathermap.org' },
+	          ' Open weather Map'
+	        ),
+	        ' - I used Open Weather Map to Search for weather data by city name .'
+	      )
+	    )
+	  );
 	};
 	module.exports = About;
 
